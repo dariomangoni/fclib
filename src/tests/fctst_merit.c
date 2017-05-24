@@ -400,12 +400,12 @@ static int compare_solutions (struct fclib_solution *a, struct fclib_solution *b
 
 int main (int argc, char **argv)
 {
-  int i;
+
   if (0)
   {
-    struct fclib_global *problem, *p;
-    struct fclib_solution *solution, *s;
-    struct fclib_solution *guesses, *g;
+    struct fclib_global *problem;
+    struct fclib_solution *solution;
+    struct fclib_solution *guesses;
     int numguess;
     
     problem = fclib_read_global ("output_file.hdf5");
@@ -424,10 +424,9 @@ int main (int argc, char **argv)
   else
   {
 
-    struct fclib_local *problem, *p;
-    struct fclib_solution *solution, *s;
-    struct fclib_solution *guesses, *g;
-    short allfine = 0;
+    struct fclib_local *problem;
+    struct fclib_solution *solution;
+    struct fclib_solution *guesses;
     int numguess=1;
     problem = fclib_read_local ("local_problem_test.hdf5");
     solution = fclib_read_solution ("local_problem_test.hdf5");

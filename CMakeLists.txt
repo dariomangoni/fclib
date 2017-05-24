@@ -117,7 +117,7 @@ endif(USE_MPI)
 # Force a default build type if not provided by user
 # CMAKE_BUILD_TYPE = empty, Debug, Release, RelWithDebInfo or MinSizeRel.
 if (NOT CMAKE_BUILD_TYPE)
-  set (CMAKE_BUILD_TYPE RELEASE CACHE STRING "Choose the type of build, options are: None, Debug, Release, RelWithDebInfo or MinSizeRel." FORCE)  
+  set (CMAKE_BUILD_TYPE Release CACHE STRING "Choose the type of build, options are: None, Debug, Release, RelWithDebInfo or MinSizeRel." FORCE)  
 endif (NOT CMAKE_BUILD_TYPE)
 
 if(MSVC)
