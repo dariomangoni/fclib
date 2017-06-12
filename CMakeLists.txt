@@ -160,9 +160,9 @@ include_directories(${${PROJECT_LIBRARY_NAME}_SRCDIRS})
 if(BUILD_SHARED_LIBS) # shared library
   add_library(${PROJECT_LIBRARY_NAME} SHARED ${${PROJECT_LIBRARY_NAME}_SRC})
 else() # static library
-  add_library(${PROJECT_LIBRARY_NAME} STATIC ${${PROJECT__LIBRARY_NAME}_SRC})
+  add_library(${PROJECT_LIBRARY_NAME} STATIC ${${PROJECT_LIBRARY_NAME}_SRC})
 endif()
-# Libs to link with PROJECT__LIBRARY_NAME
+# Libs to link with PROJECT_LIBRARY_NAME
 target_link_libraries(${PROJECT_LIBRARY_NAME} ${LIBS})
 
 set_target_properties(${PROJECT_LIBRARY_NAME} PROPERTIES
